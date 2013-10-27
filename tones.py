@@ -24,7 +24,7 @@ symbols = {
 	'so': {'katakana': 'そ', 'hiragana': 'ソ'},
 	'ta': {'katakana': 'た', 'hiragana': 'タ'},
 	'ti': {'katakana': 'ち', 'hiragana': 'チ'},
-	'tu': {'katakana': 'つ', 'hiragana': 'ツ'},
+	'tsu': {'katakana': 'つ', 'hiragana': 'ツ'},
 	'te': {'katakana': 'て', 'hiragana': 'テ'},
 	'to': {'katakana': 'と', 'hiragana': 'ト'},
 	'na': {'katakana': 'な', 'hiragana': 'ナ'},
