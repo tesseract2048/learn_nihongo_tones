@@ -69,12 +69,16 @@ if enablekatakana == 0 and enablehiragana == 0:
 	print 'Either or both katakana and hiragana shall be 1'
 	exit(1)
 
+total = 0
+correct = 0
+
 while True:
 	sound = choice(symbols.keys())
 	data = symbols[sound]
 	rnd = random()
 	p1 = 'katakana: %s' % data['katakana']
 	p2 = 'hiragana: %s' % data['hiragana']
+	total += 1
 	if enablekatakana == 0:
 		p1 = p2
 	if enablehiragana == 0:
@@ -86,5 +90,8 @@ while True:
 	answer = sys.stdin.readline()
 	if answer.strip() == sound:
 		println('correct', 2)
+		correct += 1
 	else:
 		println('sound: %s' % sound, 1)
+	ratio = float(correct) / total
+	println('ratio: %f' % ratio, 4)
